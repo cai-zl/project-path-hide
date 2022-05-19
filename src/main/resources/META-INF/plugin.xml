@@ -1,0 +1,22 @@
+<idea-plugin>
+    <id>com.caizl.ph</id>
+    <name>Project Path Hide</name>
+    <vendor email="740662047@qq.com" url="740662047@qq.com">caizl</vendor>
+
+    <description><![CDATA[
+     隐藏项目文件路径信息，防止左右移动
+    ]]></description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <treeStructureProvider implementation="com.caizl.ph.CustomTreeStructureProvider"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
